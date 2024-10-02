@@ -1,142 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Social links profile</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    body {
-      background-color: #424242;
-    }
+    <title>Frontend Mentor | Social links profile</title>
 
-    .bg {
-      display: flex;
-      flex-direction: column;
-      width: 400px;
-      height: 550px;
-      background-color: #757575;
-      align-items: center;
-      color: white;
-      border-radius: 20px;
-      margin: 100px auto 10px;
-    }
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      @font-face {
+        font-family: 'InterFont';
+        src: url('./assets/fonts/Inter-VariableFont_slnt\,wght.ttf') format(truetype);
+      }
 
-    .bg .picture {
-      margin: 30px 0 18px 0;
-    }
+      body {
+        font-family: 'InterFont';
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        background-color: #424242;
+        margin: 0;
+      }
 
-    .bg .name {
-      font-size: 32px;
-      margin: 0 0 18px 0;
-    }
+      .bg {
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        height: 550px;
+        background-color: #757575;
+        align-items: center;
+        color: white;
+        border-radius: 20px;
+        padding: 10px;
+      }
+      .bg .picture {
+        margin: 10px auto;
+      }
+      .bg .name p {
+        font-size: 32px;
+        margin: 0 0 15px;
+      }
+      .bg .place p {
+        font-size: 20px;
+        margin: 0 0 18px;
+        color: #76ff03;
+      }
+      .bg .office p {
+        font-size: 16px;
+        margin: 0 0 18px 0;
+      }
+      .picture img {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+      }
+      .bg button {
+        width: 300px;
+        height: 50px;
+        color: white;
+        background-color: #2c2c2c;
+        border-radius: 8px;
+        border: 0px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+      .bg button:hover {
+        background-color: #76ff03;
+        color: #000000;
+      }
+      .github-btn {
+        margin: 0 0 9px 0;
+      }
+      .frontend-mentor-btn,
+      .linkedin-btn,
+      .twitter-btn {
+        margin: 9px 0;
+      }
 
-    .bg .place {
-      font-size: 20px;
-      margin: 0 0 18px 0;
-      color: #76FF03;
-    }
+      .instagram-btn {
+        margin: 9px 0 0;
+      }
 
-    .bg .office {
-      font-size: 16px;
-      margin: 0 0 18px 0;
-    }
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
 
-    .picture img {
-      width: 70px;
-      height: 70px;
-      border-radius: 50%;
-    }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
 
-    .bg button {
-      width: 300px;
-      height: 40px;
-      color: white;
-      background-color: #2C2C2C;
-      border-radius: 8px;
-      border: 0px;
-      font-size: 16px;
-      cursor: pointer;
-    }
+  <body>
+    <div class="bg">
+      <div class="picture">
+        <img
+          class="circle--square"
+          src="assets/images/S__17162243.jpg"
+          alt="大頭照"
+        />
+      </div>
 
-    .bg button:hover {
-      background-color: #76FF03;
-      color: #000000;
-    }
+      <div class="name">
+        <p>WeiHu-Lay</p>
+      </div>
 
-    .github-btn {
-      margin: 0 0 9px 0;
-    }
+      <div class="place">
+        <p>Taiwan, Pingtung</p>
+      </div>
 
-    .frontend-mentor-btn, .linkedin-btn, .twitter-btn {
-      margin: 9px 0;
-    }
+      <div class="office">
+        <p>"Front-end developer and avid reader."</p>
+      </div>
 
-    .instagram-btn {
-      margin: 9px 0 25px 0;
-    }
+      <div class="github-btn">
+        <a href="https://github.com/DerRight" target="_blank">
+          <button>GitHub</button>
+        </a>
+      </div>
 
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
+      <div class="frontend-mentor-btn">
+        <button>Frontend Mentor</button>
+      </div>
 
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
-</head>
+      <div class="linkedin-btn">
+        <a
+          href="https://www.linkedin.com/in/weihu-lei-40a366267/"
+          target="_blank"
+        >
+          <button>LinkedIn</button>
+        </a>
+      </div>
 
-<body>
-  <div class="bg">
-    <div class="picture">
-      <img class="circle--square" src="assets/images/S__17162243.jpg" alt="大頭照" />
+      <div class="twitter-btn">
+        <button>Twitter</button>
+      </div>
+
+      <div class="instagram-btn">
+        <button>Instagram</button>
+      </div>
     </div>
 
-    <div class="name">
-      WeiHu-Lay
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">WeiHu-Lay</a>.
     </div>
-
-    <div class="place">
-      Taiwan, Pingtung
-    </div>
-
-    <div class="office">
-      "Front-end developer and avid reader."
-    </div>
-
-    <div class="github-btn">
-      <a href="https://github.com/DerRight" target="_blank">
-        <button>GitHub</button>
-      </a>
-    </div>
-
-    <div class="frontend-mentor-btn">
-      <button>Frontend Mentor</button>
-    </div>
-
-    <div class="linkedin-btn">
-      <a href="https://www.linkedin.com/in/weihu-lei-40a366267/" target="_blank">
-        <button>LinkedIn</button>
-      </a>
-    </div>
-
-    <div class="twitter-btn">
-      <button>Twitter</button>
-    </div>
-
-    <div class="instagram-btn">
-      <button>Instagram</button>
-    </div>
-  </div>
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">WeiHu-Lay</a>.
-  </div>
-</body>
+  </body>
 </html>
